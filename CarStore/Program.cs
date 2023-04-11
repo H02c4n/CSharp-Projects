@@ -139,16 +139,16 @@ namespace CarStore
                 return choice;
             }
 
-            var mustang = new Car("Ford", "Mustang", 25000);
-            var niro = new Car("Kia", "Niro", 12000);
+            // var mustang = new Car("Ford", "Mustang", 25000);
+            // var niro = new Car("Kia", "Niro", 12000);
 
 
 
-            store.ShoppingList.Add(mustang);
-            store.ShoppingList.Add(niro);
+            // store.ShoppingList.Add(mustang);
+            // store.ShoppingList.Add(niro);
 
-            decimal total = store.Checkout();
-            System.Console.WriteLine($"Store value is {total}");
+            // decimal total = store.Checkout();
+            // System.Console.WriteLine($"Store value is {total}");
         }
 
 
