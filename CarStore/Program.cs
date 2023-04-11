@@ -57,7 +57,8 @@ namespace CarStore
             store.ShoppingList.Add(mustang);
             store.ShoppingList.Add(niro);
 
-            System.Console.WriteLine(store.Checkout());
+            decimal total = store.Checkout();
+            System.Console.WriteLine($"Store value is {total}");
         }
     }
 }
