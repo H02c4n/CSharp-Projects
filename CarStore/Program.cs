@@ -9,18 +9,23 @@ namespace CarStore
         public Car()
         {
             Brand = "nothing yet";
-            Modal = "nothing yet";
+            Model = "nothing yet";
             Price = 0.00M;
         }
-        public Car(string brand, string modal, decimal price)
+        public Car(string brand, string model, decimal price)
         {
             Brand = brand;
-            Modal = modal;
+            Model = model;
             Price = price;
         }
         public string Brand { get; set; }
-        public string Modal { get; set; }
+        public string Model { get; set; }
         public decimal Price { get; set; }
+
+        public string Summary()
+        {
+            return $"Brand: {Brand} Model: {Model} Price: ${Price}";
+        }
     }
 
     public class Store
@@ -49,14 +54,50 @@ namespace CarStore
     {
         public static void Main(string[] args)
         {
+
+            var store = new Store();
+
             System.Console.WriteLine("Welcome to the car store. First you must create some car inventory. Then you may add some cars to the shopping cart. Finally you may checkout which will give you a total value of the shopping cart.");
 
             int action = chooseAction();
 
             while (action != 0)
             {
-                System.Console.WriteLine($"You chose {action}");
+                switch (action)
+                {
+                    case 1:
+                        System.Console.WriteLine("You chose to add a new car to the inventory");
+
+                        String carBrand = "";
+                        String carModel = "";
+                        Decimal carPrice = 0;
+
+                        System.Console.WriteLine("What is the car brand? ford, kia etc.");
+                        carBrand = Console.ReadLine();
+
+                        System.Console.WriteLine("What is the car model? focus, niro etc.");
+                        carModel = Console.ReadLine();
+
+                        System.Console.WriteLine("What is the car price?");
+                        carPrice = int.Parse(Console.ReadLine());
+
+                        var newCar = new Car(carBrand, carModel, carPrice);
+                        store.Cars.Add(newCar);
+
+                        printInvemtory(store);
+                        break;
+                }
+
+
                 action = chooseAction();
+            }
+
+            static void printInvemtory(Store s)
+            {
+                foreach (var c in s.Cars)
+                {
+                    System.Console.WriteLine("Car: " + c.Summary());
+                }
             }
 
             static int chooseAction()
@@ -71,7 +112,7 @@ namespace CarStore
             var mustang = new Car("Ford", "Mustang", 25000);
             var niro = new Car("Kia", "Niro", 12000);
 
-            var store = new Store();
+
 
             store.ShoppingList.Add(mustang);
             store.ShoppingList.Add(niro);
