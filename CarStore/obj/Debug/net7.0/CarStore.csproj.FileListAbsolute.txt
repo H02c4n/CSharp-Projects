@@ -1,0 +1,15 @@
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.csproj.AssemblyReference.cache
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.AssemblyInfoInputs.cache
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.AssemblyInfo.cs
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.csproj.CoreCompileInputs.cache
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\bin\Debug\net7.0\CarStore.exe
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\bin\Debug\net7.0\CarStore.deps.json
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\bin\Debug\net7.0\CarStore.runtimeconfig.json
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\bin\Debug\net7.0\CarStore.dll
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\bin\Debug\net7.0\CarStore.pdb
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.dll
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\refint\CarStore.dll
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.pdb
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\CarStore.genruntimeconfig.cache
+C:\Users\halil\Desktop\CSharp\CSharp-Projects\CarStore\obj\Debug\net7.0\ref\CarStore.dll
