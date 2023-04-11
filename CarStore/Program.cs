@@ -99,6 +99,15 @@ namespace CarStore
 
                         printShoppingCart(store);
                         break;
+
+                    // checkout 
+                    case 3:
+                        printShoppingCart(store);
+                        System.Console.WriteLine($"The total cost of your items is : {store.Checkout()}");
+                        break;
+
+                    default:
+                        break;
                 }
 
 
