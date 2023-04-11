@@ -65,6 +65,7 @@ namespace CarStore
             {
                 switch (action)
                 {
+                    // add item to inventory
                     case 1:
                         System.Console.WriteLine("You chose to add a new car to the inventory");
 
@@ -86,17 +87,37 @@ namespace CarStore
 
                         printInvemtory(store);
                         break;
+
+                    // add to cart
+                    case 2:
+                        System.Console.WriteLine("You choose to add a car to you shopping cart.");
+                        printInvemtory(store);
+                        System.Console.WriteLine("Which item would you like to buy? (number)");
+                        int carChosen = int.Parse(Console.ReadLine());
+
+                        store.ShoppingList.Add(store.Cars[carChosen]);
+
+                        printShoppingCart(store);
+                        break;
                 }
 
 
                 action = chooseAction();
             }
 
+            static void printShoppingCart(Store s)
+            {
+                for (int i = 0; i < s.ShoppingList.Count; i++)
+                {
+                    System.Console.WriteLine($"Car #{i} : {s.ShoppingList[i].Summary()}");
+                }
+            }
+
             static void printInvemtory(Store s)
             {
-                foreach (var c in s.Cars)
+                for (int i = 0; i < s.Cars.Count; i++)
                 {
-                    System.Console.WriteLine("Car: " + c.Summary());
+                    System.Console.WriteLine($"Car #{i} : {s.Cars[i].Summary()}");
                 }
             }
 
